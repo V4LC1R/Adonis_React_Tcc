@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import { isAuthenticated } from "./services/auth";
+import { isAuthenticated } from "./services/auth.js";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -19,7 +19,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/welcome" component={() => <h1>Login</h1>} />
+      <Route exact path="/welcome" component={() => <h1>Welcome to the Jungle</h1>} />
       <Route path="/login" component={()=><h1>entrando</h1>}/>
       <PrivateRoute exact path="/catalogo/view" component={()=><h1>ver pecas</h1>}/>
       <PrivateRoute exact path="/catalogo/edit" component={()=><h1>editat pecas</h1>}/>
@@ -28,4 +28,4 @@ const Routes = () => (
   </BrowserRouter>
 );
 
-export default Routes;
+export default Routes
