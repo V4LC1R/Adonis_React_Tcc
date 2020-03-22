@@ -6,11 +6,6 @@ import {TopNav,WelcomeMsg, Container,Context,ButtonLink} from "./style"
 class Welcome extends Component{
     state={};
 
-    handleLogin=e=>{
-        e.preventDefault();
-        alert("Logando ae pera");
-    };
-
     render(){
         return(
             <Container id="welcome">
@@ -48,7 +43,9 @@ class Welcome extends Component{
                                 </div>
 
                                 <div className="aa-b">
-                                    <ButtonLink> Inscreva-se</ButtonLink>
+                                   <Link to="/cadastro">
+                                         <ButtonLink> Inscreva-se</ButtonLink>
+                                   </Link>
                                 </div>
                         </Context>
                     </WelcomeMsg>
