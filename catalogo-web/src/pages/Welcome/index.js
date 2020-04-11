@@ -4,48 +4,52 @@ import {Link} from 'react-router-dom';
 import {TopNav,WelcomeMsg, Container,Context,ButtonLink} from "./style"
 
 class Welcome extends Component{
-    state={};
 
     render(){
         return(
             <Container id="welcome">
               
                     <TopNav id="topNav" > 
-                        <div className="clickLink">
-                           Guia
-                        </div>
+                        <Link id="ImHere">
+                            Home
+                        </Link>
 
-                        <div className="clickLink">
-                            Suporte
-                        </div>
+                        <Link>
+                            Guia
+                        </Link>
 
-                        <div className="clickLink">
-                            Login   
-                        </div>
+                         <Link>
+                             Suporte
+                         </Link>
+                        
+                         <Link>
+                            Login
+                        </Link>
+                       
 
                     </TopNav>
 
                     <WelcomeMsg>
                         <Context >
                             
-                               <div className="aa-b">
+                               <div className="Center-Context">
                                  <h1>
                                     ATAG
                                 </h1>
         
                                </div>
                                
-                                <div className="aa-b">
+                                <div className="Center-Context">
                                     <strong><p>
                                         Olá, seja bem vindo ao nosso site,
                                         para fazer uso de nossos servicos e ferramentas 
                                     </p></strong>
                                 </div>
 
-                                <div className="aa-b">
-                                   <Link to="/cadastro">
-                                         <ButtonLink> Inscreva-se</ButtonLink>
-                                   </Link>
+                                <div className="Center-Context">
+                                    <Link to="/cadastro">
+                                        <ButtonLink> Cadastre-se</ButtonLink>
+                                    </Link>
                                 </div>
                         </Context>
                     </WelcomeMsg>
