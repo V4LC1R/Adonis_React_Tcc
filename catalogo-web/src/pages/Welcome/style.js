@@ -23,7 +23,6 @@ export const TopNav=styled.div`
         margin:0;
         border:none;
         background:none;
-        font-size:22px;
         cursor:pointer;
         padding:18px;
         margin:4px;
@@ -35,41 +34,41 @@ export const TopNav=styled.div`
       box-shadow: 0 13px 13px 0 rgba(0,0,0,0.5555);
   
       & a {
-        color:black;
+        color:black;}
       }
 
-    @media screen and ( max-height:1080px){
-        color:white;
-        display:flex;
-        justify-content: center;
-        padding:20px;
+    @media screen and ( max-width:982px){
+        margin:15px;
 
-          & a{
-       
-        color:white;
-       
-        font-size:34px;
-        
-    }
+        & a {
+            font-size:42px;
+        }
+
+          
     }
 }
 `;
 
 export const ButtonLink= styled.button`
     color:white;
-    margin:0;
+    width:250px;
+    height:75px;
+    background-color:#8b0000;
     border:none;
-    background:none;
-    font-size:28px;
-    cursor:pointer;
-    padding:9px;
-    background:#680000;
-    border-radius:3px;
-    margin-top:3px;
-    color: white;
-
+    border-radius:1px;
+    padding:5px;
+    font-size:25px;
+    cursor: pointer;
+    
     &:hover{
         box-shadow: 0 13px 13px 0 rgba(0,0,0,0.5555);
+        background-color:#a80303;
+    }
+
+    @media screen and (max-width:980px){
+        width:380px;
+        height:105px;
+        font-size:35px;
     }
 `;
 
@@ -85,7 +84,12 @@ export const WelcomeMsg=styled.div`
     transform: translate(-50%, -50%);
     display: block;
 
-    
+    @media screen and (max-width:982px){
+        top: 35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
 }
 `;
 
@@ -95,6 +99,7 @@ export const Context=styled.div`
         align-self: center;
        
     }
+    
     & h1{
         align-self: center;
         font-size:270px;
@@ -104,6 +109,16 @@ export const Context=styled.div`
         margin: 0px;
     }
     
-   
+    @media screen and (max-width:980px){
+        & h1{
+            font-size:315px;
+            height:290px;
+        }
+
+        & p{
+            font-size:40px;
+            text-align: center;
+        }
     }
+   
 `;

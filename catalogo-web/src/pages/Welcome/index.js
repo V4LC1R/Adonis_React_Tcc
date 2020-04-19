@@ -9,25 +9,24 @@ class Welcome extends Component{
         return(
             <Container id="welcome">
               
-                    <TopNav id="topNav" > 
-                        <Link id="ImHere">
-                            Home
-                        </Link>
+                <TopNav id="topNav" > 
+                    <Link id="ImHere">
+                        Home
+                    </Link>
 
-                        <Link>
-                            Guia
-                        </Link>
+                    <Link>
+                        Guia
+                    </Link>
 
-                         <Link>
-                             Suporte
-                         </Link>
+                    <Link>
+                        Suporte
+                    </Link>
                         
-                         <Link>
-                            Login
-                        </Link>
-                       
+                    <Link to="/login">
+                        Login
+                    </Link>                       
 
-                    </TopNav>
+                </TopNav>
 
                     <WelcomeMsg>
                         <Context >
