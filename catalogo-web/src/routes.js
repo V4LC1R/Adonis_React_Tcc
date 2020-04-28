@@ -7,7 +7,7 @@ import { isAuthenticated } from "./services/auth";
 
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
-import Dashbord from "./pages/Dashbord";
+import Dashbord from "./pages/Dashbord/index";
 
 import Cadastro from "./pages/Cadastro";
 const PrivateRoute = ({ component: Component, ...rest }) => (

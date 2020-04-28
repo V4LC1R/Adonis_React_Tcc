@@ -221,12 +221,12 @@ export const SideNav=styled.div`
         text-decoration: none;
         color:black;
         margin:0;
-        border: solid ${colorMain};
+        border-left: 4px solid ${colorMain};
         background:none;
         cursor:pointer;
         padding:15px 10px 15px 10px;
         width:100%;
-        height:65px;
+        height:58px;
 
         
     }
@@ -268,7 +268,7 @@ justify-content: center;
     background:rgb(202, 202, 202);
     border-radius:12px 12px 0 0;
 `;
-export const Activities = styled.div`
+export const SmallWindow = styled.div`
     padding:5px;
     background: white;
     height:245px;
@@ -284,7 +284,7 @@ export const Activities = styled.div`
  
 `;
 
-export const ActivitiesG = styled.canvas`
+export const LageWindow = styled.canvas`
     padding:5px;
     background: white;
     height:350px;
